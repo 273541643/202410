@@ -110,7 +110,7 @@ class MobileNet_Block(nn.Module):
  
 
 #################################################################
-####在yolo.py的parse_model()函数中，写入h_sigmoid, h_swish, SELayer, conv_bn_hswis h, MobileNet_Block。
+####在yolo.py的parse_model()函数中，写入h_sigmoid, h_swish, SELayer, conv_bn_hswish, MobileNet_Block
 ######################################################################
 #在新建的.yaml文件添加代码
 # YOLOv5 🚀 by Ultralytics, GPL-3.0 license
