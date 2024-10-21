@@ -61,3 +61,16 @@ class C3_Res2Block(C3):
         super().__init__(c1, c2, n, shortcut, g, e)
         c_ = int(c2 * e)  # hidden channels
         self.m = nn.Sequential(*(Bottle2neck(c_, c_, shortcut) for _ in range(n)))
+
+class C2f_Res2Block(C2f):
+    """CSP Bottleneck with 2 convolutions."""
+
+    def __init__(self, c1, c2, n=1, shortcut=True, g=1, e=0.5):  # ch_in, ch_out, number, shortcut, groups, expansion
+        super().__init__(c1, c2, n, shortcut, g, e)
+        c_ = int(c2 * e)  # hidden channels
+        self.m = nn.Sequential(*(Bottle2neck(c_, c_, shortcut) for _ in range(n)))
+
+
+
+
+
